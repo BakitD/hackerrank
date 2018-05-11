@@ -1,0 +1,6 @@
+# Main object file
+main
+
+# Object files
+*.obj
+*.o
