@@ -1,11 +1,13 @@
 # Hacker Rank tasks
 
+# Installation
+
+> `git clone git@github.com:BakitD/hackerrank.git`
+
+> `cd hackerrank`
+
+> `export GOPATH=$(pwd)
+
 # Usage
 
-> `make`
-
-> `./main -task=TASK_NAME`
-
-For example
-
-> `./main -task=warmup`
+> `go test tests`
