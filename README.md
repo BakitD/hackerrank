@@ -6,7 +6,7 @@
 
 > `cd hackerrank`
 
-> `export GOPATH=$(pwd)
+> `export GOPATH=$(pwd)`
 
 # Usage
 
