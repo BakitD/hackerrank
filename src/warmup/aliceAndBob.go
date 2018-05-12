@@ -1,4 +1,4 @@
-package tasks
+package warmup
 
 func AliceAndBob(a0 int32, a1 int32, a2 int32, b0 int32, b1 int32, b2 int32) []int32 {
 	aliceIndex, bobIndex := 0, 1

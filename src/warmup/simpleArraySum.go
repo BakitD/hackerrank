@@ -1,4 +1,4 @@
-package tasks
+package warmup
 
 func SimpleArraySum(ar []int32) int32 {
 	result := int32(0)

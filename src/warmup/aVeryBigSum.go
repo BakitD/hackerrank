@@ -1,4 +1,4 @@
-package tasks
+package warmup
 
 func AVeryBigSum(n int32, ar []int64) int64 {
 	var result int64

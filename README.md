@@ -10,4 +10,8 @@
 
 # Usage
 
+> `make test`
+
+or
+
 > `go test tests`
