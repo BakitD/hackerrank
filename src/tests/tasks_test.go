@@ -38,3 +38,20 @@ func TestAVeryBigSum(t *testing.T) {
 		t.Error("Expected 5000000015")
 	}
 }
+
+func ExamplePlusMinus() {
+	tasks.PlusMinus([]int32{-4, 3, -9, 0, 4, 1})
+	// Output:
+	// 0.500000
+	// 0.333333
+	// 0.166667
+}
+
+func ExampleStaircase() {
+	tasks.Staircase(4)
+	// Output:
+	//    #
+	//   ##
+	//  ###
+	// ####
+}
