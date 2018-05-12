@@ -1,6 +1,6 @@
 # Hacker Rank tasks
 
-# Installation
+## Installation
 
 > `git clone git@github.com:BakitD/hackerrank.git`
 
@@ -8,7 +8,7 @@
 
 > `export GOPATH=$(pwd)`
 
-# Usage
+## Usage
 
 > `make test`
 
