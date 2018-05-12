@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"fmt"
 	"implementation"
 	"reflect"
 	"testing"
@@ -20,4 +21,18 @@ func ExampleApplesAndOranges() {
 	// Output:
 	// 1
 	// 1
+}
+
+func ExampleWillKangarooMeetOne() {
+	fmt.Print(implementation.WillKangarooMeet(0, 3, 4, 2))
+	// Output:
+	// YES
+
+}
+
+func ExampleWillKangarooMeetTwo() {
+
+	fmt.Print(implementation.WillKangarooMeet(0, 2, 5, 3))
+	// Output:
+	// NO
 }
