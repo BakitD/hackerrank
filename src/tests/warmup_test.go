@@ -55,3 +55,39 @@ func ExampleStaircase() {
 	//  ###
 	// ####
 }
+
+func ExampleMiniMaxSun() {
+	warmup.MiniMaxSum([]int32{256741038, 623958417, 467905213, 714532089, 938071625})
+	// Output:
+	// 2063136757 2744467344
+}
+
+func TestBirthdayCakeCandles(t *testing.T) {
+	testArrayOne := []int32{3, 2, 1, 3}
+	if warmup.BirthdayCakeCandles(4, testArrayOne[0:]) != 2 {
+		t.Error("Expected 2")
+	}
+	testArrayTwo := []int32{18, 90, 90, 13, 90, 75, 90, 8, 90, 43}
+	result := warmup.BirthdayCakeCandles(10, testArrayTwo[0:])
+	if result != 5 {
+		t.Error("Expected 5 got ", result)
+	}
+}
+
+func TestTimeConversion(t *testing.T) {
+	var testCases map[string]string = map[string]string{
+		"01:00:00AM": "01:00:00",
+		"07:05:05AM": "07:05:05",
+		"07:05:05PM": "19:05:05",
+		"11:00:00PM": "23:00:00",
+		"12:00:05AM": "00:00:05",
+		"12:00:05PM": "12:00:05",
+		"00:00:00AM": "00:00:00",
+	}
+	for key, value := range testCases {
+		result := warmup.TimeConversion(key)
+		if value != result {
+			t.Errorf("Expected %s got %s", value, result)
+		}
+	}
+}
