@@ -36,3 +36,41 @@ func ExampleWillKangarooMeetTwo() {
 	// Output:
 	// NO
 }
+
+func TestBetweenTwoSets(t *testing.T) {
+	testA := []int32{2, 4}
+	testB := []int32{16, 32, 96}
+	expectedValue := int32(3)
+	result := implementation.BetweenTwoSets(testA, testB)
+	if result != expectedValue {
+		t.Errorf("Expected %d got %d", expectedValue, result)
+	}
+}
+
+func TestBreakingTheRecords(t *testing.T) {
+	testArray := []int32{10, 5, 20, 20, 4, 5, 2, 25, 1}
+	expectedArray := []int32{2, 4}
+	result := implementation.BreakingRecords(testArray)
+	if !reflect.DeepEqual(result, expectedArray) {
+		t.Errorf("Expected %v got %v", expectedArray, result)
+	}
+}
+
+func TestBirthdayChocolate(t *testing.T) {
+	testArray := []int32{1, 2, 1, 3, 2}
+	var n, m int32 = 3, 2
+	result := implementation.BirthdayChocolate(n, m, testArray)
+	expectedArray := int32(2)
+	if result != expectedArray {
+		t.Errorf("Expected %v got %v", expectedArray, result)
+	}
+
+	testArrayTwo := []int32{2, 5, 1, 3, 4, 4, 3, 5, 1, 1, 2, 1, 4, 1, 3, 3, 4, 2, 1}
+	n, m = 18, 7
+	result = implementation.BirthdayChocolate(n, m, testArrayTwo)
+	expectedArray = int32(3)
+	if result != expectedArray {
+		t.Errorf("Expected %v got %v", expectedArray, result)
+	}
+
+}
