@@ -74,3 +74,22 @@ func TestBirthdayChocolate(t *testing.T) {
 	}
 
 }
+
+func TestDivisibleSumPairs(t *testing.T) {
+	testArray := []int32{1, 3, 2, 6, 1, 2}
+	var n, k int32 = 6, 3
+	var expected int32 = 5
+	result := implementation.DivisibleSumPairs(n, k, testArray)
+	if result != expected {
+		t.Errorf("Expected %d got %d", expected, result)
+	}
+}
+
+func TestMigratoryBirds(t *testing.T) {
+	testArray := []int32{1, 4, 4, 4, 5, 3}
+	expected := int32(4)
+	result := implementation.MigratoryBirds(testArray)
+	if result != expected {
+		t.Errorf("Expected %d got %d", expected, result)
+	}
+}
